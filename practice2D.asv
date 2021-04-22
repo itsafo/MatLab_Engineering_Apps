@@ -1,0 +1,17 @@
+%% LEARN ABOUT 2D TEMPERATURE FIELD
+
+clearvars
+close all
+% Initial variable declaration
+dt=0.0001;
+dx=0.05;
+tmax=0.2;
+L=1;
+t=[0:dt:tmax];
+x=[0:dx:L];
+% Iteration
+for i=1:length(t)
+    for j=1:length(x)
+        disp(t(i)*x(j));
+    end
+end
